@@ -12,6 +12,9 @@
     <maven.compiler.source>13</maven.compiler.source>
     <maven.compiler.target>13</maven.compiler.target>
     <spring.boot.version>2.4.1</spring.boot.version>
+    <modelmapper-version>2.3.5</modelmapper-version>
+    <springdoc-version>1.5.2</springdoc-version>
+    <flatten-maven-version>1.1.0</flatten-maven-version>
   </properties>
 
   <dependencyManagement>
@@ -61,14 +64,14 @@
     <dependency>
       <groupId>org.modelmapper</groupId>
       <artifactId>modelmapper</artifactId>
-      <version>2.3.5</version>
+      <version>${modelmapper-version}</version>
     </dependency>
 
 
     <dependency>
       <groupId>org.springdoc</groupId>
       <artifactId>springdoc-openapi-ui</artifactId>
-      <version>1.5.2</version>
+      <version>${springdoc-version}</version>
     </dependency>
 
     <dependency>
@@ -100,7 +103,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>flatten-maven-plugin</artifactId>
-        <version>1.1.0</version>
+        <version>${flatten-maven-version}</version>
         <configuration>
           <updatePomFile>true</updatePomFile>
           <flattenMode>resolveCiFriendliesOnly</flattenMode>
