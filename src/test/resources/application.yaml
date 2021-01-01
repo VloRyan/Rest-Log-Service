@@ -1,0 +1,16 @@
+server.servlet.context-path: "/rest-log"
+springdoc.swagger-ui.path: "api"
+
+spring:
+   datasource:
+      url: "jdbc:h2:mem:logdb"
+      driverClassName: "org.h2.Driver"
+      username: "sa"
+      password: ""
+   jpa:
+      database-platform: "org.hibernate.dialect.H2Dialect"
+      hibernate.ddl-auto: "create-drop"
+      open-in-view: false
+logging:
+  level:
+    root: "info"
