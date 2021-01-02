@@ -11,7 +11,7 @@ import lombok.Data;
 public class HttpMessage<PAYLOAD_TYPE extends Payload> {
 
   @NotNull
-  @Schema(description = "Array of http header lines.", example = "[Content-Type: text/html]",
+  @Schema(description = "Array of http header lines.", example = "[\"Content-Type: text/html\"]",
       required = true)
   private List<String> header;
 
